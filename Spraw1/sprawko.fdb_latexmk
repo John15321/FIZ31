@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1571503118 "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.tex" "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.pdf" "sprawko" 1571503119
+["pdflatex"] 1571516012 "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.tex" "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.pdf" "sprawko" 1571516013
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1562803859 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1562801976 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1562801976 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -66,13 +66,13 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1563235319 4660715 da98268a8ea41515395b86faf35b6054 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1562807839 4261111 0c4eced4c20aeac9f936fc7ad2630ec6 ""
   "c:/texlive/2019/texmf.cnf" 1562807699 673 2e5aa3ac564c6f70f54d6752d765c05d ""
-  "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.aux" 1571503119 8 a94a2480d3289e625eea47cd1b285758 ""
-  "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.tex" 1571503117 2705 1421d1ec1dca37b8c237844a9d5990ca ""
-  "sprawko.aux" 1571503119 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "sprawko.tex" 1571503117 2705 1421d1ec1dca37b8c237844a9d5990ca ""
+  "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.aux" 1571516013 8 a94a2480d3289e625eea47cd1b285758 ""
+  "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.tex" 1571516011 2705 2df57c80af8cc133e631c0250f488c02 ""
+  "sprawko.aux" 1571516013 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "sprawko.tex" 1571516011 2705 2df57c80af8cc133e631c0250f488c02 ""
   (generated)
   "sprawko.aux"
-  "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.log"
   "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.pdf"
-  "sprawko.pdf"
+  "d:/Janek/DEV/Gitowe/FIZ31/Spraw1/sprawko.log"
   "sprawko.log"
+  "sprawko.pdf"
