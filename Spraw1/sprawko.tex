@@ -11,6 +11,7 @@
 \usepackage{mathtools}
 \usepackage[table]{xcolor}
 \usepackage{multirow}
+\usepackage{polski}
 \title{Sprawozdanie 1}
 
 \author{Jan Bronicki \\
@@ -51,29 +52,29 @@ Nr indeksu: 249011}
 %---------------------------------------------------------------------
 Przykładowe obliczenia:
 \begin{center}
-     Delta niepewnosci Napiecia:\\*
+    Delta niepewności napięcia:\\*
     $\Delta u(U)  = 0.5\% \cdot rdg+1 \cdot dgt=\cfrac{0.5}{100} \cdot 3.29 + 0.01=0.0264\approx0.03$\\*
-    Niepewnosc napiecia:\\*
+    Niepewnosść napięcia:\\*
     $u(U)=\cfrac{\Delta u(U)}{\sqrt{3}}=0.015\approx0.02$\\*
-    Delta niepewnosci natezenia:\\* 
+    Delta niepewności natężenia:\\* 
     $\Delta u(I) = 1.2\% \cdot rdg+1 \cdot dgt = \cfrac{1.2}{100} \cdot 18.7 +0.1 =0.3244$\\*
-    Niepewnosc natezenia:\\*
+    Niepewność natężenia:\\*
     $u(I)= \cfrac{\Delta u(I)}{\sqrt{3}} \approx 0.2$\\*
-    Opor:\\* 
+    Opór:\\* 
     $R=\cfrac{U}{I} = \cfrac{3.29}{0.0187} \approx 175.94 \ \Omega$\\*
     %%%%%%%%%%%%%%%
-    Niepewnosc calkowita R:\\*
+    Niepewność całkowita R:\\*
     $u_c (R)=\sqrt{\sum_{j=1}^{k}\left( \cfrac{\partial f}{\partial x_j}\right)^2 u^2 (x_j)}
     =\sqrt{\cfrac{u^2 (U)}{I^2} + \cfrac{U^2 \cdot u^2 (I)}{I^4}}=$
     $= \sqrt{\cfrac{\left(\cfrac{0.02}{1000}\right)^2}{0.0187^2} + \cfrac{3.29^2 \cdot \left(\cfrac{0.2}{1000}\right)^2}{0.0187^4}}\approx 2.16$\\* 
     %%%%%%%%%%%%%%%
-    Wartosc srednia R:\\* 
+    Wartość średnia R:\\* 
     $\bar{R} = \cfrac{\sum_{i=1}^{n}x_i}{n}=174.9983333 \approx 175\Omega$\\*
-    Niepewnosc wartosci sredniej R:\\ *
+    Niepewność wartości średniej R:\\ *
     $u(\bar{R}) = \sqrt{\cfrac{\sum_{i=1}^{n} \left(x_i - \bar{x} \right)^2}{n(n-1)}}\approx 0.62$\\*
-    Opor wewnetrzny:\\* 
+    Opór wewnętrzny:\\* 
     $R_w =\cfrac{1}{A}=\cfrac{1}{0.00569} \approx 175.75 \ \Omega$\\*
-
+    Niepewność 
     % Niepewnosc oporu wewnetrznego
 \end{center}
 \end{document}
