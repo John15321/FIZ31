@@ -2,6 +2,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\graphicspath{ {graph1.png},{graph2.png} }
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{array}
 \usepackage{wrapfig}
@@ -15,7 +16,8 @@
 \title{Sprawozdanie 1}
 
 \author{Jan Bronicki \\
-Nr indeksu: 249011}
+Nr indeksu: 249011\\
+Ćwiczenie: 100b}
 \date{}
 \begin{document}
 
@@ -33,7 +35,7 @@ Nr indeksu: 249011}
     3.29&$\pm$0.02&18.7&$\pm$0.2&175.94&$\pm$ 2.16& \multirow{6}{*}{175}&\multirow{6}{*}{$\pm$0.62}&\multirow{6}{*}{175.75}&\\ 
     \cline{1-6}
 
-    4.78&$\pm$0.02&27.8&0.3&171.94&$\pm$ 1.99&&&&\\ 
+    4.78&$\pm$0.02&27.8&$\pm$0.3&171.94&$\pm$ 1.99&&&&\\ 
     \cline{1-6}
   
     6.35&$\pm$0.02&36.1&$\pm$0.3&175.90&$\pm$ 1.70&&&&\\ 
@@ -48,13 +50,14 @@ Nr indeksu: 249011}
     12.44&$\pm$0.04&71.0&$\pm$0.6&175.21&$\pm$ 1.58&&&&\\ 
     \hline
 \end{tabular}
+\label{tabular: t}
 \end{center}
 %---------------------------------------------------------------------
 Przykładowe obliczenia:
 \begin{center}
     Delta niepewności napięcia:\\*
     $\Delta u(U)  = 0.5\% \cdot rdg+1 \cdot dgt=\cfrac{0.5}{100} \cdot 3.29 + 0.01=0.0264\approx0.03$\\*
-    Niepewnosść napięcia:\\*
+    Niepewność napięcia:\\*
     $u(U)=\cfrac{\Delta u(U)}{\sqrt{3}}=0.015\approx0.02$\\*
     Delta niepewności natężenia:\\* 
     $\Delta u(I) = 1.2\% \cdot rdg+1 \cdot dgt = \cfrac{1.2}{100} \cdot 18.7 +0.1 =0.3244$\\*
@@ -74,7 +77,18 @@ Przykładowe obliczenia:
     $u(\bar{R}) = \sqrt{\cfrac{\sum_{i=1}^{n} \left(x_i - \bar{x} \right)^2}{n(n-1)}}\approx 0.62$\\*
     Opór wewnętrzny:\\* 
     $R_w =\cfrac{1}{A}=\cfrac{1}{0.00569} \approx 175.75 \ \Omega$\\*
-    Niepewność 
-    % Niepewnosc oporu wewnetrznego
+
 \end{center}
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{graph2.png}
+    \caption{Wykres Napięcia od Natężenia z naniesionymi pomiarami, niepewnościami
+     oraz linią trendu}
+    \label{fig:mesh1}
+\end{figure}
+Wnioski:\\
+Wyniki pomiarów przedstawione w tabeli z wynikami oraz na powyższym wykresie 
+wyraźnie potwierdzają Prawo Ohma. Wszelkie niepewności pomiarowe są małe i 
+nieznacznie wpływają na wynik pomiarów. 
 \end{document}
