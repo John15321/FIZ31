@@ -1,0 +1,73 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{mathtools}
+\usepackage[table]{xcolor}
+\usepackage{xcolor,colortbl}
+\usepackage{multirow}
+\usepackage{polski}
+\title{Sprawozdanie 2}
+
+\author{Jan Bronicki \\
+Nr indeksu: 249011\\
+Marcin Radke\\
+Nr indeksu: 241554\\
+Ćwiczenie: 8}
+\date{}
+\begin{document}
+
+\maketitle
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    &$\bar{m}$[kg]&$\bar{d}$[m]&h[m]&$\bar{t}$[s]&$\rho_{k}\left[\frac{ks}{m^{3}}\right]$&$\rho_{c}$$\left[\frac{ks}{m^{3}}\right]$&$\eta\left[\frac{Ns}{M^{2}}\right]$\\
+    \hline 
+    $X$ &0.0004883&0.008&0.341&18.60&1821.45&1330&0.9348\\\hline
+    % $\Delta X$&&&\\\hline
+    $u(X)$&\cellcolor{gray}&$\pm$0.001&$\pm$0.001&$\pm$0.21&\cellcolor{gray}&$\pm$10&\cellcolor{gray}    \\\hline
+    $u_{c}(X)$&X&\cellcolor{gray}&\cellcolor{gray}&\cellcolor{gray}&$\pm$34.26&\cellcolor{gray}&X\\\hline
+    % 1&&&&&&&\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{gray!50}&\cellcolor{gray!50}$\bar{m}$[kg]&\cellcolor{gray!50}$\bar{d}$[m]&\cellcolor{gray!50}h[m]&\cellcolor{gray!50}$\bar{t}$[s]&\cellcolor{gray!50}$\rho_{k}\left[\frac{ks}{m^{3}}\right]$&\cellcolor{gray!50}$\rho_{c}$$\left[\frac{ks}{m^{3}}\right]$&\cellcolor{gray!50}$\eta\left[\frac{Ns}{M^{2}}\right]$\\
+    \hline 
+    \cellcolor{gray!50}$X$ &\cellcolor{gray!50}0.00024119&\cellcolor{gray!50}0.006&\cellcolor{gray!50}0.341&\cellcolor{gray!50}21.62&\cellcolor{gray!50}2132.59&\cellcolor{gray!50}1330&\cellcolor{gray!50}0.9984\\\hline
+    % $\Delta X$&&&\\\hline
+    \cellcolor{gray!50}$u(X)$&\cellcolor{gray}&\cellcolor{gray!50}$\pm$0.001&\cellcolor{gray!50}$\pm$0.001&\cellcolor{gray!50}$\pm$0.11&\cellcolor{gray}&\cellcolor{gray!50}$\pm$10&\cellcolor{gray}    \\\hline
+    \cellcolor{gray!50}$u_{c}(X)$&\cellcolor{gray!50}X&\cellcolor{gray}&\cellcolor{gray}&\cellcolor{gray}&\cellcolor{gray!50}$\pm$53.49&\cellcolor{gray}&\cellcolor{gray!50}X\\\hline
+    % 1&&&&&&&\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \cellcolor{cyan!50}&\cellcolor{cyan!50}$\bar{m}$[kg]&\cellcolor{cyan!50}$\bar{d}$[m]&\cellcolor{cyan!50}h[m]&\cellcolor{cyan!50}$\bar{t}$[s]&\cellcolor{cyan!50}$\rho_{k}\left[\frac{ks}{m^{3}}\right]$&\cellcolor{cyan!50}$\rho_{c}$$\left[\frac{ks}{m^{3}}\right]$&\cellcolor{cyan!50}$\eta\left[\frac{Ns}{M^{2}}\right]$\\
+    \hline 
+    \cellcolor{cyan!50}$X$ &\cellcolor{cyan!50}0.00040912&\cellcolor{cyan!50}0.008&\cellcolor{cyan!50}0.341&\cellcolor{cyan!50}21.62&\cellcolor{cyan!50}1526.1&\cellcolor{cyan!50}1330&\cellcolor{cyan!50}0.743\\\hline
+    % $\Delta X$&&&\\\hline
+    \cellcolor{cyan!50}$u(X)$&\cellcolor{gray}&\cellcolor{cyan!50}$\pm$0.001&\cellcolor{cyan!50}$\pm$0.001&\cellcolor{cyan!50}$\pm$0.15&\cellcolor{gray}&\cellcolor{cyan!50}$\pm$10&\cellcolor{gray}\\\hline
+    \cellcolor{cyan!50}$u_{c}(X)$&\cellcolor{cyan!50}X&\cellcolor{gray}&\cellcolor{gray}&\cellcolor{gray}&\cellcolor{cyan!50}$\pm$28.71&\cellcolor{gray}&\cellcolor{cyan!50}X\\\hline
+    % 1&&&&&&&\hline
+\end{tabular}
+
+$u_{c}(y)=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=  \\= \sqrt{\left(\frac{ 2\cdot d\cdot g\cdot \bar{t}\cdot (\rho_{k}-\rho_{c})  }{ 18h  }\right)^{2}\cdot u_{c}^{2}( d  )+
+\left(\frac{ d^{2}\cdot g\cdot (\rho_{k}-\rho_{c})  }{ 18h  }\right)^{2}\cdot u_{c}^{2}( t  )+
+\left(\frac{ d^{2}\cdot g\cdot \bar{t}  }{ 18h  }\right)^{2}\cdot u_{c}^{2}( \rho_{k}  )+
+\left(\frac{ -d^{2}\cdot g\cdot \bar{t}  }{ 18h  }\right)^{2}\cdot u_{c}^{2}( \rho_{c}  )+
+\left(\frac{ -d^{2}\cdot g\cdot (\rho_{k}-\rho_{c})  }{ 18h^{2}  }\right)^{2}\cdot u_{c}^{2}( h  )   }$
+
+$\rho_{k}=\frac{6m}{\pi d^{3}}$\\
+$u_{c}(\rho_{k})=\sqrt{\left(\frac{6}{\pi d^{3}}\right)^{2}\cdot u^{2}(\bar{m}) + \left(\frac{12m}{\pi d^{4}}\right)\cdot u^{2}(d)}$\\
+$u(d)=\sqrt{\left(S_{\bar{d}}\right)^{2}+\frac{(\Delta d)^{2}}{3}}$\\
+$S_{\bar{t}}=\sqrt{\frac{1}{n(n-1)}\cdot\sum^{n}_{i=1}\left(t_{i}-\bar{t}\right)^{2}}$\\
+\end{document}
