@@ -91,10 +91,9 @@ Przykładowe obliczenia $B_{n}$ oraz jej niepewności:
 \end{figure}{}
 Dzięki wykresowi \ref{fig: Wykres 3} uzyskujemy jego linię regresji $y=Ax+B$, gdzie $|A|=\gamma I_{s}$ z czego otrzymujemy, że $\gamma=\cfrac{|A|}{I_{s}}$, dla rozróżnienia tutaj otrzymanego współczynnika $\gamma$ dopasujemy mu indeks "s" otrzymując $\gamma_{s}=\frac{|A|}{I_{s}}$.
 \begin{center}
-$
-    y=-0.1508x+0.0025\\
-    u(A)\approx\pm0.0003, u(B)\approx\pm0.0001
-$
+    $y=-0.1508x+0.0025$\\
+    $u(A)\approx\pm0.0003$\\
+    $u(B)\approx\pm0.0001$
 \end{center}{}
 \newpage
 Na tej podstawie możemy wyliczyć $\gamma_{s}$.
@@ -108,7 +107,7 @@ Na tej podstawie możemy wyliczyć $\gamma_{s}$.
     \vspace{2.5ex}
     $u(\gamma_{s})=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(A)\cdot\left(\frac{1}{I_{s}}\right)^{2}+u^{2}(I_{s})\cdot(\frac{A}{I_{s}^{2}})^{2}}=$\\
     \vspace{2.5ex}
-    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.005}\right)^{2}+0.0002^{2}\cdot(\frac{0.1508}{0.005^{2}})^{2}}  \approx\pm1.21$\\
+    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.005}\right)^{2}+0.00002^{2}\cdot(\frac{0.1508}{0.005^{2}})^{2}}  \approx\pm0.1347$\\
     \vspace{2.5ex}
 \end{center}
 W związku z sinsoidą zawartą we wzorze na $B_{n}$ niepewność $B_{n}$ waha się oraz w pewnych momentach (widzianych na skrajnych wartościach indukcji) owe niepewności osiągają dość duże wartości. Co za tym idzie $\gamma_{s}$, która jest na podstawie wyliczonych $B_{n}$ obliczana również jest opatrzona sporą wartością niepewności.\\
@@ -125,6 +124,39 @@ W związku z sinsoidą zawartą we wzorze na $B_{n}$ niepewność $B_{n}$ waha s
     \caption{Wykres napięcia $U_{H}$ od natężenia $I_{s}$}
     \label{fig:Wykres 4}
 \end{figure}
+
+
+
+
+Otrzymana prosta $y=Ax+B$ wynosi:\\
+\begin{center}
+    $y=1.7494x+0.0003$\\
+    $u(A)\approx0.0318$\\
+    $u(B)\approx0.0003$\\
+\end{center}
+Następnie możemy przejść do wyliczania $\gamma_{h}$. Pomiary napięcia od natężenia były robione dla kąta $\alpha=0^{\circ}$ tak więc $B_{n}\approx-0.043578$.\\
+\begin{center}
+    $\gamma_{h}=\frac{|A|}{B}$\\
+    \vspace{2.5ex}
+    $\gamma_{h}=\frac{1.7494}{0.043578}\approx 40.14$\\
+    \vspace{2.5ex}
+    $u(\gamma_{s})=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(A)\cdot\left(\frac{1}{B}\right)^{2}+u^{2}(B)\cdot(\frac{A}{B^{2}})^{2}}=$\\
+    \vspace{2.5ex}
+    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.04358}\right)^{2}+0.0058^{2}\cdot(\frac{1.7494}{0.04358^{2}})^{2}}  \approx\pm5.34$\\
+\end{center}{}
+\newpage
+Następnie na potrzeby obliczenia koncentracji $n$ obliczymy średnie $\gamma$.\\
+\begin{center}
+    $\Bar{\gamma}=\frac{\gamma_{h}+\gamma_{s}}{2}=\frac{40.14+30.16}{2}\approx35.15$\\
+    \vspace{2.5ex}
+    $u(\Bar{\gamma})=\sqrt{\frac{\sum^{n}_{i=1}(x_{i}-\Bar{x})^{2}}{n(n-1)}}=\sqrt{\frac{(30.16-35.15)^{2}+(40.14-35.15)^{2}}{2(2-1)}}\approx 4.99$\\
+    \vspace{2.5ex}
+    $n=...\approx 887.937\cdot10^{20}$\\
+    \vspace{2.5ex}
+    $u(n)=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(\Bar{\gamma})\cdot\left(\frac{1}{\Bar{\gamma}^{2}ed}\right)^{2}+u^{2}(d)\cdot\left(\frac{1}{\Bar{\gamma e d^{2}}}\right)^{2}}=$\\
+    $=\sqrt{4.99^{2}\cdot\left(\frac{1}{35.15^{2}\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}\right)^{2}+(1\cdot10^{-7})^{2}\cdot\left(\frac{1}{35.15\cdot 1.602\cdot10^{-19}\cdot (2\cdot10^{-6})^{2}}}\right)^{2}}\approx 133.644\cdot10^{20}$\\
+    
+\end{center}
 % OPRACOWANIE WYNIKOW
 %------------------------------------------------------------------
 
