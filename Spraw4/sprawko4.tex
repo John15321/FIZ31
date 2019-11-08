@@ -87,12 +87,12 @@ Przykładowe obliczenia $B_{n}$ oraz jej niepewności:
     \centering
     \includegraphics{U_H_od_B_n.png}
     \caption{Wykres napięcia hallotronu $U_{H}$ od indukcji magnetycznej $B_{n}$ }
-    \label{fig: Wykres 3}
+    \label{fig:rys3}
 \end{figure}{}
 Dzięki wykresowi \ref{fig: Wykres 3} uzyskujemy jego linię regresji $y=Ax+B$, gdzie $|A|=\gamma I_{s}$ z czego otrzymujemy, że $\gamma=\cfrac{|A|}{I_{s}}$, dla rozróżnienia tutaj otrzymanego współczynnika $\gamma$ dopasujemy mu indeks "s" otrzymując $\gamma_{s}=\frac{|A|}{I_{s}}$.
 \begin{center}
-    $y=-0.1508x+0.0025$\\
-    $u(A)\approx\pm0.0003$\\
+    $y=-0.1508x+0.0025\\
+    u(A)\approx\pm0.0003$\\
     $u(B)\approx\pm0.0001$
 \end{center}{}
 \newpage
@@ -122,7 +122,7 @@ W związku z sinsoidą zawartą we wzorze na $B_{n}$ niepewność $B_{n}$ waha s
     \centering
     \includegraphics{U_H_od_I.png}
     \caption{Wykres napięcia $U_{H}$ od natężenia $I_{s}$}
-    \label{fig:Wykres 4}
+    \label{fig:rys4}
 \end{figure}
 
 
@@ -151,15 +151,20 @@ Następnie na potrzeby obliczenia koncentracji $n$ obliczymy średnie $\gamma$.\
     \vspace{2.5ex}
     $u(\Bar{\gamma})=\sqrt{\frac{\sum^{n}_{i=1}(x_{i}-\Bar{x})^{2}}{n(n-1)}}=\sqrt{\frac{(30.16-35.15)^{2}+(40.14-35.15)^{2}}{2(2-1)}}\approx 4.99$\\
     \vspace{2.5ex}
-    $n=...\approx 887.937\cdot10^{20}$\\
+    $n=\frac{1}{35.15\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}}\approx 887.937\cdot10^{20}$\\
     \vspace{2.5ex}
     $u(n)=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(\Bar{\gamma})\cdot\left(\frac{1}{\Bar{\gamma}^{2}ed}\right)^{2}+u^{2}(d)\cdot\left(\frac{1}{\Bar{\gamma e d^{2}}}\right)^{2}}=$\\
-    $=\sqrt{4.99^{2}\cdot\left(\frac{1}{35.15^{2}\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}\right)^{2}+(1\cdot10^{-7})^{2}\cdot\left(\frac{1}{35.15\cdot 1.602\cdot10^{-19}\cdot (2\cdot10^{-6})^{2}}}\right)^{2}}\approx 133.644\cdot10^{20}$\\
-    
+    $=\sqrt{4.99^{2}\cdot\left(\frac{1}{35.15^{2}\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}\right)^{2}+(1\cdot10^{-7})^{2}\cdot\left(\frac{1}{35.15\cdot 1.602\cdot10^{-19}\cdot (2\cdot10^{-6})^{2}}\right)^{2}}\approx \pm133.644\cdot10^{20}$\\
 \end{center}
 % OPRACOWANIE WYNIKOW
 %------------------------------------------------------------------
 
 
+%------------------------------------------------------------------
+% WNIOSKI
+\section{Wnioski}
+Pierwsza część pomiaru potwierdza działanie efektu Halla generując sygnał sinusoidalny tworząc prąd zmienny. Niestety duże niepewności pomiarowe analogowego amperomierza oraz bardzo duże niepewności kątu hallotronu. Przez owe niepewności wykres \ref{fig:rys3} bardzo dobrze pokazuje jak bardzo prosta $y$ mogła sie zmienic przez co zmieniony byłby parametr $A$ co znacząco wpłyneło by to na wartość $\gamma_{s}$. $\gamma_{h}$ również posiadało duże niepewności ze względu na indukcję $B$. Obie wartości $\gamma$ dość różnią się od siebie co jest spowodowane owimy niepewnościami. Aby obliczyć koncentrację $n$ wyliczyliśmy średnią obu $\gamma$ i jej niepewność. Wyliczona koncentracja również jest przez to obarczona dużą niepewnością.
+% WNIOSKI
+%------------------------------------------------------------------
 
 \end{document}
