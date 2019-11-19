@@ -30,6 +30,7 @@ Nr indeksu: 241554}
 \section{Wstęp Teoretyczny}
 Celem ćwiczenia jest skalowanie termopary w celu wyznaczenie współczynnika termoelektrycznego termopary. Następnie wyznaczenie temperatury krzepnięcia stopu Wooda.\\
 \begin{figure}[h]
+    \centering
     \includegraphics[width=8cm]{schemat_ukladu.png}
 \end{figure}
 Lepkość zostanie wyznaczona na podstawie danych otrzymanych przez obserwacje kulki 
@@ -50,6 +51,11 @@ W naszym eksperymencie wykorzystamy następujące przyrządy:\\
 \end{itemize}
 % WSTEP TEORETYCZNY
 \section{Skalowanie termopary i wyznaczenie współczynnika termoelektrycznego $\alpha$}
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[scale=0.5]{wyniki.PNG}
+    \end{center}
+\end{figure}
 Wzory:\\
 niepewność multimetra\\
 $u(U)=\frac{0,05}{100}\cdot U+0,001$\\
@@ -57,13 +63,22 @@ $u(U)=\frac{0,05}{100}\cdot U+0,001$\\
 niepewność termometru\\
 $u(T)=\pm0,01\degree$\\
 \begin{figure}[h]
-    \includegraphics[width=13cm]{wykres.PNG}
+    \begin{center}
+    \includegraphics[width=14cm]{wykres.PNG}
+    \end{center}
 \end{figure}
-Z regresji liniowej wynika, że $\alpha\approx0,0404\lbrack\frac{mV}{C}\rbrack$ natomiast jej błąd $u(\alpha)\approx0,000116$\\
+Z regresji liniowej wynika, że $\alpha\approx0,0404\lbrack\frac{mV}{C}\rbrack$ natomiast jej błąd $u(\alpha)\approx0,00012$\\
 \section{Wyznaczenie temperatury krzepnięcia stopu metali oraz niepewności jej
 wyznaczenia}
 \begin{figure}[h]
-    \includegraphics[width=13cm]{wykres2.PNG}
+    \begin{center}
+    \includegraphics[scale=0.6]{wyniki2.PNG}
+    \end{center}
+\end{figure}
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=16cm]{wykres2.PNG}
+    \end{center}
 \end{figure}
 Wzory:\\
  niepewność standardowa typu A wartości
@@ -79,16 +94,16 @@ niepewność napięcia krzepnięcia można obliczyć ze wzoru\\
 $u(U_{k})=\sqrt{(u_{A}(\overline{U}))^2+(u_{B}(U))^2}$\\
 
 Przykładowe obliczenia:\\
-$u_{A}(\overline{U})=\sqrt{\frac{\sum_{i=1}^{29}(U_{i}-\overline{U}_{i})^2}{29\cdot28}}\approx0,0000216V$\\
+$u_{A}(\overline{U})=\sqrt{\frac{\sum_{i=1}^{29}(U_{i}-\overline{U}_{i})^2}{29\cdot28}}\approx0,000022V$\\
 
-$u_{B}(U)=\frac{\Delta_{p}(U)}{\sqrt{3}}\approx0,000585V$\\
+$u_{B}(U)=\frac{\Delta_{p}(U)}{\sqrt{3}}\approx0,00059V$\\
 
-$u(U_{k})=\sqrt{(0,0000216))^2+(0,000585)^2}\approx0,000586V$\\
+$u(U_{k})=\sqrt{(0,0000216))^2+(0,000585)^2}\approx0,00059V$\\
 
 Temperatura krzepnięcia stopu\\
 $T_{k}=\frac{U_{k}}{\alpha}=\frac{2,62}{0,0404}\approx64,8C\degree$\\
 
-$u_{c}(T_{k})\approx2,62C\degree$\\
+$u_{c}(T_{k})\approx2,7C\degree$\\
 \section{Wnioski}
 \begin{itemize}
     \item wraz ze wzrostem temperatury przewodów rośnie napięcie
