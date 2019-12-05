@@ -52,14 +52,18 @@ W naszym eksperymencie wykorzystamy następujące przyrządy:
 %------------------------------------------------------------------
 % OPRACOWANIE WYNIKOW
 \section{Opracowanie wyników}
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{pak.png}
+    \label{fig:rys2}
+\end{figure}
 % Wykres UH(alfa)
 Sporządziliśmy wykres $U_{H}(\alpha)$:
 \begin{figure}[h]
     \centering
     \includegraphics{U_H_od_ALFA.png}
     \caption{Wykres napięcia hallotronu od kąta}
-    \label{fig:rys2}
+    \label{fig:rys3}
 \end{figure}
 
 % Przykladowe niepewnosci UH(alfa)
@@ -74,7 +78,7 @@ Sporządziliśmy wykres $U_{H}(\alpha)$:
 \end{figure}
 
 % Wykres UH(Bn)
-Na podstawie wzoru $B_{n}=B_{0}sin(\alpha-\alpha_{0})$ został narysowany wykres \ref{fig:rys3} opisujący $U_{H}(B_{n})$. Jako wartość $B_{0}$ zgodnie z instrukcją przyjęte zostało $0.5$, a błąd $B_{0}=\pm0.05 \ T$.\\
+Na podstawie wzoru $B_{n}=B_{0}sin(\alpha-\alpha_{0})$ został narysowany wykres \ref{fig: Wykres 3} opisujący $U_{H}(B_{n})$. Jako wartość $B_{0}$ zgodnie z instrukcją przyjęte zostało $0.5$, a błąd $B_{0}=\pm0.05 \ T$.\\
 \begin{figure}[h]
 Przykładowe obliczenia $B_{n}$ oraz jej niepewności:
     \begin{itemize}
@@ -83,15 +87,18 @@ Przykładowe obliczenia $B_{n}$ oraz jej niepewności:
         \item Niepewność $u(\alpha) = \pm5^{\circ}$ została wyrażona w radianach i wynosi około $\pm0.0873 \ \left[rad\right]$
     \end{itemize}{}
 \end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{pako.png}
+\end{figure}{}
 
-
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics{U_H_od_B_n.png}
     \caption{Wykres napięcia hallotronu $U_{H}$ od indukcji magnetycznej $B_{n}$ }
-    \label{fig:rys3}
+    \label{fig:rys5}
 \end{figure}{}
-Dzięki wykresowi \ref{fig: Wykres 3} uzyskujemy jego linię regresji $y=Ax+B$, gdzie $|A|=\gamma I_{s}$ z czego otrzymujemy, że $\gamma=\cfrac{|A|}{I_{s}}$, dla rozróżnienia tutaj otrzymanego współczynnika $\gamma$ dopasujemy mu indeks "s" otrzymując $\gamma_{s}=\frac{|A|}{I_{s}}$.
+Dzięki wykresowi \ref{fig:rys3} uzyskujemy jego linię regresji $y=Ax+B$, gdzie $|A|=\gamma I_{s}$ z czego otrzymujemy, że $\gamma=\cfrac{|A|}{I_{s}}$, dla rozróżnienia tutaj otrzymanego współczynnika $\gamma$ dopasujemy mu indeks "s" otrzymując $\gamma_{s}=\frac{|A|}{I_{s}}$.
 \begin{center}
     $y=-0.1508x+0.0025$\\
     $u(A)\approx\pm0.0003$\\
@@ -103,7 +110,7 @@ Dzięki wykresowi \ref{fig: Wykres 3} uzyskujemy jego linię regresji $y=Ax+B$, 
 
 
 Na tej podstawie możemy wyliczyć $\gamma_{s}$.
-\begin{center}
+\begin{flushleft}
     \vspace{2.5ex}
     $\gamma_{s}=\frac{|A|}{I_{s}}=\frac{0.1508}{0.005}\approx30.16$\\
     \vspace{2.5ex}
@@ -113,18 +120,19 @@ Na tej podstawie możemy wyliczyć $\gamma_{s}$.
     \vspace{2.5ex}
     $u(\gamma_{s})=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(A)\cdot\left(\frac{1}{I_{s}}\right)^{2}+u^{2}(I_{s})\cdot(\frac{A}{I_{s}^{2}})^{2}}=$\\
     \vspace{2.5ex}
-    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.005}\right)^{2}+0.00002^{2}\cdot(\frac{0.1508}{0.005^{2}})^{2}}  \approx\pm0.1347$\\
+    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.005}\right)^{2}+0.00002^{2}\cdot(\frac{0.1508}{0.005^{2}})^{2}}  \approx\pm0.14$\\
     \vspace{2.5ex}
-\end{center}
+\end{flushleft}
 W związku z sinsoidą zawartą we wzorze na $B_{n}$ niepewność $B_{n}$ waha się oraz w pewnych momentach (widzianych na skrajnych wartościach indukcji) owe niepewności osiągają dość duże wartości. Co za tym idzie $\gamma_{s}$, która jest na podstawie wyliczonych $B_{n}$ obliczana również jest opatrzona sporą wartością niepewności.\\
-
-\newpage
 
 \par Następnie ponownie spróbujemy wyliczyć współczynnik $\gamma$ tym razem na podstawie pomiarów napięcia $U_{H}$ od natężenia $I_{s}$ (które tym razem nie jest stałe i jest przedmiotem naszych pomiarów). Jak widać na otrzymanym wykresie \ref{fig:Wykres 4} zależność, którą utrzymaliśmy jest liniowa, a w tym przypadku mając $y=Ax+B$ współczynnik $A$ będzie się równał $A=\gamma B$. Ponownie, dla rozróżnienia wspołczynnikowi $\gamma$ tutaj otrzymanemu nadamy indeks, dla jego rozróżnienia ("h"). Tak więc otrzymujemy taką zależność $\gamma_{h}=\frac{|A|}{B}$. W tych pomiarach indukcja $B$ jest taka, że $B=const.$.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=1.1]{pake.png}
+\end{figure}
 
-
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics{U_H_od_I.png}
     \caption{Wykres napięcia $U_{H}$ od natężenia $I_{s}$}
@@ -132,7 +140,7 @@ W związku z sinsoidą zawartą we wzorze na $B_{n}$ niepewność $B_{n}$ waha s
 \end{figure}
 
 
-
+\newpage
 
 Otrzymana prosta $y=Ax+B$ wynosi:\\
 \begin{center}
@@ -141,27 +149,27 @@ Otrzymana prosta $y=Ax+B$ wynosi:\\
     $u(B)\approx\pm0.0003$\\
 \end{center}
 Następnie możemy przejść do wyliczania $\gamma_{h}$. Pomiary napięcia od natężenia były robione dla kąta $\alpha=0^{\circ}$ tak więc $B_{n}\approx-0.043578$.\\
-\begin{center}
+\begin{flushleft}
     $\gamma_{h}=\frac{|A|}{B}$\\
     \vspace{2.5ex}
     $\gamma_{h}=\frac{1.7494}{0.043578}\approx 40.14$\\
     \vspace{2.5ex}
     $u(\gamma_{s})=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(A)\cdot\left(\frac{1}{B}\right)^{2}+u^{2}(B)\cdot(\frac{A}{B^{2}})^{2}}=$\\
     \vspace{2.5ex}
-    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.04358}\right)^{2}+0.0058^{2}\cdot(\frac{1.7494}{0.04358^{2}})^{2}}  \approx\pm5.34$\\
-\end{center}{}
-\newpage
+    $=\sqrt{0.0003^{2}\cdot\left(\frac{1}{0.04358}\right)^{2}+0.0058^{2}\cdot(\frac{1.7494}{0.04358^{2}})^{2}}  \approx\pm5.4$\\
+\end{flushleft}{}
+
 Następnie na potrzeby obliczenia koncentracji $n$ obliczymy średnie $\gamma$.\\
-\begin{center}
+\begin{flushleft}
     $\Bar{\gamma}=\frac{\gamma_{h}+\gamma_{s}}{2}=\frac{40.14+30.16}{2}\approx35.15$\\
     \vspace{2.5ex}
-    $u(\Bar{\gamma})=\sqrt{\frac{\sum^{n}_{i=1}(x_{i}-\Bar{x})^{2}}{n(n-1)}}=\sqrt{\frac{(30.16-35.15)^{2}+(40.14-35.15)^{2}}{2(2-1)}}\approx 4.99$\\
+    $u(\Bar{\gamma})=\sqrt{\frac{\sum^{n}_{i=1}(x_{i}-\Bar{x})^{2}}{n(n-1)}}=\sqrt{\frac{(30.16-35.15)^{2}+(40.14-35.15)^{2}}{2(2-1)}}\approx 5.00$\\
     \vspace{2.5ex}
     $n=\frac{1}{35.15\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}}\approx 887.937\cdot10^{20}$\\
     \vspace{2.5ex}
     $u(n)=\sqrt{\sum^{k}_{j=1}\left(\frac{\partial f}{\partial x_{j}}\right)^{2}\cdot u^{2}(x_{j})}=\sqrt{u^{2}(\Bar{\gamma})\cdot\left(\frac{1}{\Bar{\gamma}^{2}ed}\right)^{2}+u^{2}(d)\cdot\left(\frac{1}{\Bar{\gamma e d^{2}}}\right)^{2}}=$\\
-    $=\sqrt{4.99^{2}\cdot\left(\frac{1}{35.15^{2}\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}}\right)^{2}+(1\cdot10^{-7})^{2}\cdot\left(\frac{1}{35.15\cdot 1.602\cdot10^{-19}\cdot (2\cdot10^{-6})^{2}}\right)^{2}}\approx \pm133.644\cdot10^{20}$\\
-\end{center}
+    $=\sqrt{4.99^{2}\cdot\left(\frac{1}{35.15^{2}\cdot1.602\cdot10^{-19}\cdot2\cdot10^{-6}}\right)^{2}+(1\cdot10^{-7})^{2}\cdot\left(\frac{1}{35.15\cdot 1.602\cdot10^{-19}\cdot (2\cdot10^{-6})^{2}}\right)^{2}}\approx \pm140\cdot10^{20}$\\
+\end{flushleft}
 % OPRACOWANIE WYNIKOW
 %------------------------------------------------------------------
 
